@@ -1,0 +1,13 @@
+*.a
+
+!lib.a
+
+*.exe
+
+*.exe.stackdump
+
+*.txt
+
+*.pdf
+
+
