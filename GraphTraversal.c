@@ -31,9 +31,9 @@ void BFS(Vertex* V, LinkedQueue* Queue)
     while(E!= NULL) {
       V = E->Target;
       if(V!= NULL && V->Visited == NotVisited) {
-        printF("%d ", V->Data);
+        printf("%d ", V->Data);
         V->Visited = Visited;
-        LQ_Enqueue(&Queue, LQ_VreateNode(V));
+        LQ_Enqueue(Queue, LQ_CreateNode(V));
       }
       E = E->Next;
     }
