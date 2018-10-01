@@ -4,10 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "GraphTraversal.h"
 
+typedef Vertex* ElementType;
 typedef struct tagNode
 {
-  char* Data;
+  ElementType Data;
   struct tagNode* NextNode;
 } Node;
 
