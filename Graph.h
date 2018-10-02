@@ -9,10 +9,11 @@ enum VisitMode
   Visited, NotVisited
 };
 
-typedef int ElementType;
+//typedef int ElementType;
 typedef struct tagVertex
 {
-  ElementType Data;
+  //ElementType Data;
+  int Data;
   int Visited;
   int Index;
   struct tagVertex* Next;
@@ -35,7 +36,7 @@ typedef struct tagGraph
 
 Graph* CreateGraph();
 void DestroyGraph(Graph* G);
-Vertex* CreateVertex(ElementType Data);
+Vertex* CreateVertex(int Data);
 void DestroyVertex(Vertex* V);
 Edge* CreateEdge(Vertex* From, Vertex* Target, int Weight);
 void DestroyEdge(Edge* E);

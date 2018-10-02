@@ -16,7 +16,7 @@ void DestroyGraph(Graph* G)
   }
   free(G);
 }
-Vertex* CreateVertex(ElementType Data)
+Vertex* CreateVertex(int Data)
 {
   Vertex* V = (Vertex*)malloc(sizeof(Vertex));
   V->Data = Data;
