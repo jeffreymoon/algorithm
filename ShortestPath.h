@@ -1,0 +1,10 @@
+#ifndef SHORTESTPATH_H
+#define SHORTESTPATH_H
+
+#include "Graph.H"
+#include "PriorityQueue.h"
+
+#define MAX_WEIGHT 36267
+
+void Dijkstra(Graph* G, Vertex* StartVertex, Graph* ShortestPath);
+#endif
